@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.header {
+  height: 70px;
+  padding: 4px 2% 0 2%;
+  .header-content {
+    border-bottom: 2px solid $colour4;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    .title {
+      font-size: 42px;
+    }
+    .user-image {
+      background-color: $colour2;
+      border-radius: 50%;
+      box-shadow: 2px 2px 9px $colour3, -2px -2px 9px $colour4;
+      height: 50px;
+      width: 50px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 20px;
+  padding: 2px 2%;
+  text-align: center;
+  .footer-text {
+    a {
+      color: $colour4;
+      font-style: italic;
+    }
+  }
+}

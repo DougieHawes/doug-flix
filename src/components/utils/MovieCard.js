@@ -1,9 +1,17 @@
+import { Link } from "react-router-dom";
+
+import "./style.scss";
+
 const MovieCard = (data) => {
-  console.log(data);
+  const { id, image } = data.item;
 
-  const { title } = data.item;
-
-  return <div>{title}</div>;
+  return (
+    <Link to={`/movie/${id}`}>
+      <div className="movie-card">
+        <img className="movie-card-image" src={image} alt="movie poster" />
+      </div>
+    </Link>
+  );
 };
 
 export default MovieCard;

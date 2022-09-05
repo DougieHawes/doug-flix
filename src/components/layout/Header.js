@@ -12,7 +12,7 @@ const Header = () => {
           <h1 className="title">dougflix</h1>
         </Link>
         <div className="user-image">
-          <img src={User} alt="user image" />
+          <img src={User} alt="user avatar" />
         </div>
       </div>
     </header>

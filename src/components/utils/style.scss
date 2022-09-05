@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie-card {
+  border-radius: 6px;
+  box-shadow: 2px 2px 9px $colour3, -2px -2px 9px $colour4;
+  margin: 8px 6px;
+  height: 297px;
+  overflow: hidden;
+  position: relative;
+  width: 210px;
+  .movie-card-image {
+    height: 100%;
+    min-width: 210px;
+    width: auto;
+  }
+}

@@ -1,13 +1,13 @@
 import MovieCard from "./MovieCard";
 
-const MovieList = (items) => {
+import "./style.scss";
+
+const MovieList = ({ items }) => {
   return (
-    <div>
-      <div>
-        {items.items.map((i) => (
-          <MovieCard item={i} />
-        ))}
-      </div>
+    <div className="movie-list">
+      {items.map((i) => (
+        <MovieCard key={i.id} item={i} />
+      ))}
     </div>
   );
 };

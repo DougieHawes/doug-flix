@@ -9,7 +9,7 @@ const Home = () => {
       <Link1 link="/recent-shows" text="RECENT-SHOWS" />
       <Link1 link="/all-time-movies" text="ALL-TIME-MOVIES" />
       <Link1 link="/all-time-shows" text="ALL-TIME-SHOWS" />
-      <Link1 link="/all-time-boxoffice" text="ALL-TIME-BOXOFFICE" />
+      <Link1 link="/all-time-boxoffice" text="BOX-OFFICE" />
       <Link1 link="/coming-soon" text="COMING-SOON" />
     </div>
   );

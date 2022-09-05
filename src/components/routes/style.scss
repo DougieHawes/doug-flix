@@ -1,4 +1,12 @@
 @import "../../variables.scss";
 
 .home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box-office-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }

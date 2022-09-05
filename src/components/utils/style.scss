@@ -1,5 +1,14 @@
 @import "../../variables.scss";
 
+.home-link {
+  text-align: center;
+  width: 210px;
+  .home-link-image {
+    height: 255px;
+    width: 180px;
+  }
+}
+
 .movie-list {
   display: flex;
   flex-wrap: wrap;
@@ -18,5 +27,43 @@
     height: 100%;
     min-width: 210px;
     width: auto;
+  }
+}
+
+.box-office-item {
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px $colour3, -2px -2px 6px $colour4;
+  display: flex;
+  margin: 6px;
+  overflow: hidden;
+  width: 210px;
+  .box-office-item-rank {
+    background-color: $colour2;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: $colour3;
+    font-size: 42px;
+    padding-top: 6px;
+    width: 42px;
+  }
+  .box-office-item-details {
+    background-color: $colour4;
+    width: 100%;
+    .box-office-item-banner {
+      background-color: $colour3;
+      display: flex;
+      justify-content: space-between;
+      padding: 2px 6px;
+    }
+    .box-office-item-image {
+      height: 238px;
+      width: 100%;
+    }
+    .box-office-item-gross {
+      padding: 0 6px;
+      * {
+        color: $colour1;
+      }
+    }
   }
 }

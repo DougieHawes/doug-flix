@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import api from "../api/api";
 import { APIKey } from "../api/ApiKey";
 
+import { Link2 } from "../utils/links";
+
 import "./style.scss";
 
 const AllTimeBoxoffice = () => {
@@ -21,16 +23,11 @@ const AllTimeBoxoffice = () => {
   }, []);
 
   return (
-    <>
+    <div className="box-office-wrapper">
       {allTimeBoxoffice.map((i) => (
-        <div key={i.id}>
-          {i.rank} - {i.title} - {i.year} - domesticLifetimeGross:
-          {i.domesticLifetimeGross} - foreignLifetimeGross:
-          {i.foreignLifetimeGross} - worldwideLifetimeGross:
-          {i.worldwideLifetimeGross}
-        </div>
+        <Link2 key={i.id} item={i} />
       ))}
-    </>
+    </div>
   );
 };
 

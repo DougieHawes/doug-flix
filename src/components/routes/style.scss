@@ -10,3 +10,43 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.actor-list {
+  display: flex;
+  flex-wrap: wrap;
+  .actor-card {
+    max-width: 210px;
+    min-width: 210px;
+    text-align: center;
+    .actor-name {
+    }
+    .actor-image {
+      max-height: 300px;
+      min-height: 300px;
+      max-width: 210px;
+      min-width: 210px;
+    }
+    .actor-character {
+    }
+  }
+}
+
+.similars-list {
+  display: flex;
+  flex-wrap: wrap;
+  .similars-card {
+    max-width: 210px;
+    min-width: 210px;
+    text-align: center;
+    .similars-name {
+    }
+    .similars-image {
+      max-height: 300px;
+      min-height: 300px;
+      max-width: 210px;
+      min-width: 210px;
+    }
+    .similars-rating {
+    }
+  }
+}

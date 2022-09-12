@@ -30,6 +30,7 @@
 .routes {
   max-height: calc(100vh - 99px);
   min-height: calc(100vh - 99px);
+  overflow-x: hidden;
   overflow-y: scroll;
   margin: 6px 2% 2px 2%;
 }

@@ -24,7 +24,7 @@ const AllTimeMovies = () => {
 
   return (
     <div>
-      <MovieList items={allTimeMovies} />
+      <MovieList items={allTimeMovies} type="movie" />
     </div>
   );
 };

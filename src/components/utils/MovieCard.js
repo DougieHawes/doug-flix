@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 import "./style.scss";
 
-const MovieCard = (data) => {
-  const { id, image } = data.item;
+const MovieCard = ({ item, type }) => {
+  const { id, image } = item;
 
   return (
-    <Link to={`/movie/${id}`}>
+    <Link to={`/${type}/${id}`}>
       <div className="movie-card">
         <img className="movie-card-image" src={image} alt="movie poster" />
       </div>

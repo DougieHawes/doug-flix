@@ -24,7 +24,7 @@ const RecentShows = () => {
 
   return (
     <div>
-      <MovieList items={recentShows} />
+      <MovieList items={recentShows} type="show" />
     </div>
   );
 };
